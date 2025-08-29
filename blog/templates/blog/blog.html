@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}Clivatti Advogados - Página Inicial{% endblock %}
+{% block title %}Clivatti Advogados - Blog{% endblock %}
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
@@ -46,35 +46,9 @@
                 {% endif %}
             </div>
         </section>
-        <section id="options" class="w-25">
-            <div class="input-group mb-3 px-3 py-3" style="background-color: var(--secondary-color);">
-                <form method="get" class="w-100 d-flex">
-                    
-                    <input type="text" name="q" class="form-control rounded-end-0" placeholder="Pesquisar..." value="{{ request.GET.q }}">
-                    <button type="submit" class="btn btn-primary rounded-start-0"><i class="fa-solid fa-magnifying-glass d-flex justify-content-center"></i></button>
-                </form>
-            </div>
-            <div class="mb-3 px-3 py-3" style="background-color: var(--secondary-color);">
-                <h3 class="fs-5 border-bottom">Posts Recentes:</h3>
-                <ul class="d-flex flex-column gap-3 list-unstyled m-0">
-                    {% for post in posts|slice:":6" %}
-                        <li><a href="{% url 'post' post.pk %}">{{ post.title }}</a></li>
-                    {% endfor %}    
-                </ul>
-                
-            </div>
-            <div class="mb-3 px-3 py-3" style="background-color: var(--secondary-color);">
-                <h3 class="fs-5 border-bottom">Categorias:</h3>
-                <ul class="d-flex flex-column gap-3 list-unstyled m-0">
-                    {% for category in categories %}
-                        <li>
-                            <a href="{% url 'blog' %}?categoria={{ category.id }}">{{ category.name }}</a>
-                        </li>
-                    {% endfor %}    
-                </ul>
-            </div>
-            
-        </section>
+        
+        {% include "blog/partials/_sidenav.html" %}
+        
     </div>
     
     

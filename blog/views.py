@@ -25,6 +25,7 @@ class Blog(View):
         context = {
             "page_obj": page_obj,                  # objeto paginado
             "posts": page_obj.object_list,         # posts da página atual
+            "last_five_posts": posts[:6],
             "categories": models.PostCategory.objects.all(),
             "categoria_id": categoria_id,
             "search_query": search_query,
@@ -43,6 +44,7 @@ class Post(View):
     
     def get(self, request, pk):
         post = get_object_or_404(models.Post, pk=pk)
+        posts = models.Post.objects.all()
 
         try:
             post_anterior = models.Post.objects.filter(pk__lt=pk).order_by('-pk').first()
@@ -59,7 +61,7 @@ class Post(View):
             "post": post,
             "previous_post": post_anterior,
             "next_post": post_proximo,
-            "posts": models.Post.objects.all(),
+            "last_five_posts": posts[:6],
             "categories": models.PostCategory.objects.all()
         }
         return render(request, "blog/post.html", context)

@@ -128,7 +128,7 @@
     }
 
     .testimonial-card {
-        max-width: 900px;
+        
         margin: 0 auto;
     }
 
@@ -168,4 +168,81 @@
         border-radius: 100%;
     }
 
+}
+
+#posts-recentes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1150px;    
+    padding: 2rem 1rem;
+    margin: auto;
+
+    .post{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        padding: 1rem 2rem;
+        
+        h2{
+            
+            a{
+                color: var(--dark-font);    
+                display: -webkit-box;
+                -webkit-line-clamp: 2;   /* número de linhas */
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        p.post-content {
+            font-size: 0.85rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;   /* número de linhas */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p.post-info{
+            font-size: 0.75rem;
+            margin: 0;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+  #sobre-nos{
+    img{
+        display: none;
+    }
+  }
+
+  #direito-medico-e-da-saude{
+    div.gap-3:nth-child(3){
+        flex-direction: column;
+    }
+  }
+
+  #outras-areas-de-atuacao{
+    div.gap-3:nth-child(2){
+        flex-direction: column;
+    }
+  }
+
+  #quem-indica{
+    div:nth-child(1){
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem !important;
+
+        div{
+            width: 100% !important;
+        }
+    }
+  }
 }

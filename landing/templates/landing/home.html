@@ -95,9 +95,37 @@
     </div>
 </section>
 
+<div class="d-flex flex-column align-items-center py-4 px-2 text-center" style="background-color: var(--main-color); color: var(--light-font);">
+    <p class="fw-bold">POSTS RECENTES DO BLOG</p>
+    <i aria-hidden="true" class="fas fa-arrow-alt-circle-down fs-3"></i>
+</div>
+<section id="posts-recentes" class="container">
+    <div class="row g-3">
+        {% for post in last_four_posts %}
+            <div class="col-md-6">
+                <div class="post text-secondary p-3">
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <h2 class="fs-5"><a href="{% url 'post' post.pk %}">{{ post.title }}</a></h2>
+                            <p class="post-info">Por: <u>{{ post.author }}</u></p> 
+                        </div>
+                        
+                        <p class="post-content">{{ post.content }}</p>    
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <p class="post-info">Postado em: <u>{{ post.created_at|date:"d/m/Y | H:i" }}</u></p>
+                        <p class="post-info">Em: <u class="p-0">{{ post.category.name }}</u></p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
 <section id="quem-indica" class="d-flex flex-column align-items-center py-5 text-secondary text-center">
-    <div class="d-flex align-items-stretch gap-2">
-        <div class="container" style="width: 60%;">
+    <div class="d-flex gap-2">
+        <div class="container" style="width: 70%;">
         <h2 class="text-center mb-4">Quem Indica</h2>
 
         <div id="carouselDepoimentos"
@@ -176,7 +204,7 @@
             </button>
         </div>
         </div>
-        <div class="d-flex flex-column align-items-center justify-content-center p-4 rounded-3" style="width: 40%; background-color: var(--bg);">
+        <div class="d-flex flex-column align-items-center justify-content-center p-4 rounded-3" style="width: 30%; background-color: var(--bg);">
             <img src="{% static 'landing/img/doutora.jpg' %}" alt="" class="mb-3">
             <h3 class="fs-5">Juliana Clivatti Massoni Pamplona</h3>
             <p>Advogada inscrita na OAB/SP 325.619, especialista em direito civil, atuante desde 2011 em âmbito nacional.</p>
