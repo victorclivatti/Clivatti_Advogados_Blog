@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Clivatti Advogados - Página Inicial{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'landing/css/home.css' %}">
+{% endblock %}
+
+{% block main %}
+<section id="section-1" class="d-flex align-items-end justify-content-center">
+    <div>
+        <h2 class="pb-2">Experiência, respeito, resultados.</h2>
+        <p>
+            Damos a cada novo caso a atenção merecida, acompanhando cada etapa do processo.<br>
+            Somos um novo tipo de escritório de advocacia para um mundo em mudança.
+        </p>
+    </div>
+</section>
+<section id="sobre-nos" class="d-flex justify-content-center text-secondary">
+    <div class="d-flex gap-3" style="max-width: 65.5rem;">
+        <div class="d-flex flex-column justify-content-around h-100">
+            <h2 class="pb-2">Somos consistentes, pacientes e profissionais.</h2>
+            <p>Desde a nossa fundação em 2011, temos assessorado clientes de todo o país com sucesso comprovado, atuando no consultivo e contencioso de suas demandas. <br><br>Nosso principal objetivo é representar com excelência cada um de nossos clientes, buscando a solução mais justa a seu favor.</p>
+        
+            <a class="d-flex align-items-center justify-content-around" href="https://api.whatsapp.com/send/?phone=5513996055151"><i class="fa-brands fa-whatsapp fs-6"></i> SOLICITE INFORMAÇÕES SEM COMPROMISSO</a>
+        </div>
+        <img style="max-height: 400px;" class="rounded-5 img-fluid" src="{% static 'landing/img/sobre_nos.png' %}" alt="">    
+    </div>
+    
+</section>
+
+<div class="d-flex flex-column align-items-center py-4 px-2 text-center" style="background-color: var(--main-color); color: var(--light-font);">
+    <p class="fw-bold">TUDO QUE VOCÊ PRECISA SABER SOBRE DIREITO MÉDICO</p>
+    <i aria-hidden="true" class="fas fa-arrow-alt-circle-down fs-3"></i>
+</div>
+<section id="direito-medico-e-da-saude" class="d-flex flex-column align-items-center text-secondary pt-5 pb-5">
+    
+    <div class="d-flex flex-column align-items-center">
+        <h2>Direito Médico e da Saúde</h2>
+        <p>O Direito à Saúde está previsto nos Artigos 6º e 196º da Constituição Federal e o objetivo é que esse Direito seja garantido por políticas públicas:</p>
+        <div class="d-flex gap-3 mb-4">
+            <div class="article-div">
+                <div class="d-flex align-items-center gap-2">
+                    <i aria-hidden="true" class="fas fa-book fs-4"></i>
+                    <h2 class="m-0">Art. 196</h2>
+                </div>
+                <p class="m-0">A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação.</p>
+            </div>
+            <div class="article-div">
+                <div class="d-flex align-items-center gap-2">
+                    <i aria-hidden="true" class="fas fa-book fs-4"></i>
+                    <h2 class="m-0">Art. 197</h2>
+                </div>
+                <p class="m-0">São de relevância pública as ações e serviços de saúde, cabendo ao Poder Público dispor, nos termos da lei, sobre sua regulamentação, fiscalização e controle, devendo sua execução ser feita diretamente ou através de terceiros e, também, por pessoa física ou jurídica de direito privado”</p>
+            </div>
+        </div>
+        <p>Dessa forma, o Direito Médico tem um papel importante nesse cenário de proteção jurídica às partes envolvidas nos direitos relacionados à saúde e necessita de uma visão mais crítica e profunda do profissional especializado nessa área.<br><br>De um lado, pacientes estão em busca pelo seu direito à saúde, pela prestação de um serviço com qualidade e pelo reparo de algum dano causado proveniente da prática médica. Do outro lado, profissionais da saúde e instituições médicas procuram os seus direitos para a defesa de uma acusação indevida e também buscam orientações jurídicas para atuar de modo preventivo.</p>
+        <p><b>Somos especialistas em:</b><br>Ações contra planos de saúde por negativa de cobertura de cirurgia bariátrica, cirurgias plásticas reparadoras, e negativa sob alegação de carência.</p>
+        <a class="d-flex align-items-center justify-content-around" href="">SAIBA MAIS</a>
+    </div>
+</section>
+
+<div class="d-flex flex-column align-items-center py-4 px-2 text-center text-secondary" style="background-color: var(--secondary-color);">
+    <p class="fw-bold">OUTRAS ÁREAS DE ATUAÇÃO</p>
+    <i aria-hidden="true" class="fas fa-arrow-alt-circle-down fs-3"></i>
+</div>
+<section id="outras-areas-de-atuacao" class="d-flex flex-column align-items-center text-secondary pt-5 pb-5">
+    
+    <div class="d-flex flex-column">
+        <p>O Direito à Saúde está previsto nos Artigos 6º e 196º da Constituição Federal e o objetivo é que esse Direito seja garantido por políticas públicas:</p>
+        <div class="d-flex gap-3 mb-4">
+            <div class="article-div">
+                <div class="d-flex align-items-center gap-2">
+                    <i aria-hidden="true" class="fas fa-file-invoice-dollar fs-4" ></i>
+                    <h2 class="m-0">Bancário</h2>
+                </div>
+                <p class="m-0">– Defesa em ação de busca e apreensão de veículo.<br>– Ação de revisão de contrato de financiamento de veículo.<p>
+            </div>
+            <div class="article-div">
+                <div class="d-flex align-items-center gap-2">
+                    <i aria-hidden="true" class="fas fa-users fs-4"></i>
+                    <h2 class="m-0">Família</h2>
+                </div>
+                <p class="m-0">Defesa das mulher em ações de:<br>– Divórcio<br>– Guarda<br>– Alimentos</p>
+            </div>
+            <div class="article-div">
+                <div class="d-flex align-items-center gap-2">
+                    <i aria-hidden="true" class="fas fa-business-time fs-4"></i>
+                    <h2 class="m-0">Trabalho</h2>
+                </div>
+                <p class="m-0">Reclamações trabalhistas em geral, atuando em defesa do empregado ou do empregador.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="quem-indica" class="d-flex flex-column align-items-center py-5 text-secondary text-center">
+    <div class="d-flex align-items-stretch gap-2">
+        <div class="container" style="width: 60%;">
+        <h2 class="text-center mb-4">Quem Indica</h2>
+
+        <div id="carouselDepoimentos"
+            class="carousel slide"
+            data-bs-ride="carousel">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators m-0 mb-2">
+            <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Depoimento 1"></button>
+            <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1" aria-label="Depoimento 2"></button>
+            <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="2" aria-label="Depoimento 3"></button>
+            <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="3" aria-label="Depoimento 4"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" data-bs-interval="6000">
+                <div class="card shadow testimonial-card">
+                <div class="card-body p-4 p-md-5">
+                    <p class="mb-0 testimonial-text">
+                    “Excelente profissional, ética e comprometida, atua com transparência e possui profundo conhecimento em sua área de atuação e com isso sentimos a segurança que é necessária para contratação de serviços advocatícios. Super recomendo!”
+                    </p>
+                    <div class="testimonial-author">— Jaqueline Andrade</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" data-bs-interval="6000">
+                <div class="card shadow testimonial-card">
+                <div class="card-body p-4 p-md-5">
+                    <p class="mb-0 testimonial-text">
+                    “Excelência e perfeccionismo nos serviços prestados. Desde a uma simples consulta à um caso complexo, você terá a segurança de estar amparado por uma profissional altamente qualificada. Recomendo a todos.”
+                    </p>
+                    <div class="testimonial-author">— Henrique Pamplona</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" data-bs-interval="6000">
+                <div class="card shadow testimonial-card">
+                <div class="card-body p-4 p-md-5">
+                    <p class="mb-0 testimonial-text">
+                    “Juliana Clivatti... uma advogada experiente e sabe como conforta seus clientes com suas palavras e serviço. Sou grata até hoje por toda ajuda... Uma mulher sensata e sempre está ao alcance de todas, mães desamparadas. Amo todo seu trabalho e tenho fé que tudo aquilo que ela almeja ela já esteja alcançando com sua honestidade e sabedoria. Obrigada desde já... só agradeço.”
+                    </p>
+                    <div class="testimonial-author">— Aline Vieira</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item" data-bs-interval="6000">
+                <div class="card shadow testimonial-card">
+                <div class="card-body p-4 p-md-5">
+                    <p class="mb-0 testimonial-text">
+                    “Não poderia ser diferente; formada em uma das melhores instituições de ensino superior do país. Aliada à evidente competência, é uma advogada brilhante. Eu confio plenamente nessa profissional... Recomendo pelos serviços prestados...”
+                    </p>
+                    <div class="testimonial-author">— Táxista Avaré</div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center p-4 rounded-3" style="width: 40%; background-color: var(--bg);">
+            <img src="{% static 'landing/img/doutora.jpg' %}" alt="" class="mb-3">
+            <h3 class="fs-5">Juliana Clivatti Massoni Pamplona</h3>
+            <p>Advogada inscrita na OAB/SP 325.619, especialista em direito civil, atuante desde 2011 em âmbito nacional.</p>
+            <i aria-hidden="true" class="fas fa-envelope fs-3"></i>
+        </div>
+    </div>
+</section>
+{% endblock %}

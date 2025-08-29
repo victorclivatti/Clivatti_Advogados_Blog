@@ -1,0 +1,10 @@
+:root {
+    --bg: #fff;
+    --main-color: #686767;
+    --secondary-color: #F2F2F2;
+    --font-family: 'Arial', sans-serif;
+    --bs-body-bg: #f8f9fa; /* exemplo do Bootstrap */
+    --border: #d8d8d8;
+    --light-font: rgb(250, 248, 245);
+    --dark-font: rgb(73, 72, 70);
+}

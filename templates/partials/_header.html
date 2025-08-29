@@ -1,0 +1,32 @@
+{% load static %}
+
+<header class="d-flex flex-column align-items-center w-100 h-fit">
+    <section class="d-flex align-items-center justify-content-between w-100 px-3" id="header-contact">
+        <ul class="d-flex m-0 gap-3 list-unstyled text-secondary" style="font-size: 0.8375rem; height: fit-content;">
+            <li style="height: fit-content;"><i class="fa-solid fa-phone"></i> +55 (13) 2138-4148</li>
+            <li style="height: fit-content;"><i class="fa-solid fa-envelope"></i> contato@clivattiadvogados.com.br</li>
+            <li style="height: fit-content;"><i class="fa-solid fa-clock"></i> Seg - Sex: 10:00 - 18:00</li>
+        </ul>
+
+        <a class="" href="https://api.whatsapp.com/send/?phone=5513996055151"><i class="fa-solid fa-computer"></i> ATENDIMENTO ONLINE</a>
+    </section>
+
+    <hr>
+
+    <nav class="d-flex align-items-center justify-content-between w-100 px-3">
+        <img src="{% static 'img/logo.png' %}" alt="">
+
+        <ul class="d-flex m-0 p-0 list-unstyled gap-3" style="font-size: 0.95rem;">
+            <li><a href="{% url 'home' %}" class="text-secondary">Página Inicial</a></li>
+            <li><a href="#sobre-nos" class="text-secondary">Sobre Nós</a></li>
+            <li><a href="#direito-medico-e-da-saude" class="text-secondary">Direito Médico e da Saúde</a></li>
+            <li><a href="#outras-areas-de-atuacao" class="text-secondary">Outras Áreas de Atuação</a></li>
+            <li><a href="{% url 'blog' %}" class="text-secondary">Blog</a></li>
+            <li><a href="#quem-indica" class="text-secondary">Quem Indica</a></li>
+        </ul>
+        
+    </nav>
+
+    <hr style="border-color: var(--main-color);">
+
+</header>
