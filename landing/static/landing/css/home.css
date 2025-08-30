@@ -251,5 +251,12 @@
                 width: 100% !important;
             }
         }
+    
+        div.carousel-indicators{
+            flex-direction: row !important;
+            gap: 0.25rem !important;
+        }
     }
+
+    
 }
