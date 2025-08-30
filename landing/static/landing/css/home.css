@@ -219,33 +219,37 @@
 }
 
 @media (max-width: 640px) {
-  #sobre-nos{
-    img{
-        display: none;
+    #section-1{
+        text-align: center;
     }
-  }
 
-  #direito-medico-e-da-saude{
-    div.gap-3:nth-child(3){
-        flex-direction: column;
-    }
-  }
-
-  #outras-areas-de-atuacao{
-    div.gap-3:nth-child(2){
-        flex-direction: column;
-    }
-  }
-
-  #quem-indica{
-    div:nth-child(1){
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem !important;
-
-        div{
-            width: 100% !important;
+    #sobre-nos{
+        img{
+            display: none;
         }
     }
-  }
+
+    #direito-medico-e-da-saude{
+        div.gap-3:nth-child(3){
+            flex-direction: column;
+        }
+    }
+
+    #outras-areas-de-atuacao{
+        div.gap-3:nth-child(2){
+            flex-direction: column;
+        }
+    }
+
+    #quem-indica{
+        div:nth-child(1){
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem !important;
+
+            div{
+                width: 100% !important;
+            }
+        }
+    }
 }
