@@ -56,6 +56,9 @@
         border: 1px solid var(--border);
         border-radius: 20px;
         padding: 2rem 1.25rem;
+        div{
+            padding: 0;
+        }
     }
 
     a {
