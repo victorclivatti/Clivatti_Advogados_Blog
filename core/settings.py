@@ -126,14 +126,16 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# Pasta onde o Django vai coletar os arquivos estáticos para produção
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # <--- diferente de STATICFILES_DIRS
 
-
+# Pastas com arquivos estáticos de desenvolvimento
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    os.path.join(BASE_DIR, 'static'),  # <--- seus arquivos CSS/JS originais
 ]
 
+# Para WhiteNoise
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
