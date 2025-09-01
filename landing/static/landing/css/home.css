@@ -1,4 +1,4 @@
-@import url('variables.css');
+@import url({% url 'static/css/variables.css' %});
 
 #section-1{
     height: 35.75rem;
